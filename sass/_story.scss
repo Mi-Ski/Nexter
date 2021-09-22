@@ -1,11 +1,38 @@
 .story {
+	// LEFT
 	&__pictures {
 		background-color: $color-primary;
 		grid-column: full-start / 7;
+
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: repeat(6, 1fr);
 	}
 
+	&__img--1 {
+		width: 100%;
+	}
+
+	&__img--2 {
+		width: 100%;
+	}
+
+	// RIGHT
 	&__content {
 		background-color: $color-grey-light-1;
 		grid-column: 7 / full-end;
+		padding: 6rem 2rem;
+
+		padding: 6rem 7vw;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: start;
+	}
+
+	&__text {
+		font-size: 1.5rem;
+		font-style: italic;
+		margin-bottom: 4rem;
 	}
 }

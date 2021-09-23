@@ -1,4 +1,10 @@
 .homes {
 	background-color: $color-secondary;
 	grid-column: center-start / center-end;
+
+	display: grid;
+}
+
+.home {
+
 }

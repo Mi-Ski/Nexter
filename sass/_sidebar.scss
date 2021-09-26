@@ -1,5 +1,27 @@
 .sidebar {
-	background-color: $color-primary;	
+	background-color: $color-primary;
 	grid-row: 1 / -1;
 	grid-column: sidebar-start / sidebar-end;
+	display: flex;
+	justify-content: center;
+
+	&__button {
+		border: none;
+		height: 2px;
+		width: 4rem;
+		background-color: #fff;
+		transform: translateY(4rem);
+
+		&::before,
+		&::after {
+			content: '';
+			height: 2px;
+			width: 4rem;
+			background-color: #fff;
+			display: block;
+		}
+
+		&::before { transform: translateY(-1.5rem) };
+		&::after { transform: translateY(1.3rem) };
+	}
 }

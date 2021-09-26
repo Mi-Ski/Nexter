@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Nexter webpage",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mi-Ski/Nexter.git"
+  },
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/main.css -w",
     "devserver": "live-server",

@@ -20,16 +20,33 @@
 	&__img {
 		display: block;
 		border-radius: 50%;
-		width: 7rem; 
+		width: 7rem;
 	}
 
 	&__details {
-
 	}
 
 	&__sold {
-		text-transform: uppercase;	
+		text-transform: uppercase;
 		color: $color-grey-light-2;
 		margin-top: -3px;
+	}
+
+	@media only screen and (max-width: $medium) {
+		grid-column: full-start / full-end;
+		grid-row-gap: 1rem;
+
+		&__list {
+			display: flex;
+		}
+	}
+	@media only screen and (max-width: $small) {
+		&__list {
+			display: grid;
+			grid-template-columns: min-content max-content;
+			grid-column-gap: 2rem;
+			grid-row-gap: 5vh;
+			align-items: center;
+		}
 	}
 }
